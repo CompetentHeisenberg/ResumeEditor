@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import style from "../css/reg.module.css";
 import Input from "../components/InputReg";
+import Label from "../components/Label";
+import { Link } from "react-router-dom";
+import Button from "../components/RegButton";
 function Registration() {
   useEffect(() => {
     //CSS Для body
@@ -23,13 +26,31 @@ function Registration() {
       </div>
       <div className={style.rightpanel}>
         <div className={style.regblock}>
-          <div className={style.welcome}></div>
+          <div className={style.welcome}>
+            <div>
+              <Label style={style.welcomelabel} text={"Welcome"}></Label>
+            </div>
+            <div>
+              <Label
+                style={style.labelunderwelcome}
+                text={"Create account, if you have already"}
+              ></Label>
+            </div>
+            <Link to="/auth" className={style.link}>
+              Login
+            </Link>
+          </div>
           <div className={style.dani}>
-            <Input style={style.input} help={"Write Email"}></Input>
-            <Input style={style.input} help={"Write Email"}></Input>
-            <Input style={style.input} help={"Write Email"}></Input>
-            <Input style={style.input} help={"Write Email"}></Input>
-            <Input style={style.input} help={"Write Email"}></Input>
+            <Input style={style.input} help={"Full name:"}></Input>
+            <Input style={style.input} help={"Email:"}></Input>
+            <Input
+              style={style.input}
+              help={"Password:"}
+              type={"password"}
+            ></Input>
+            <Button style={style.button} type={"button"}>
+              Start Journey
+            </Button>
           </div>
         </div>
       </div>

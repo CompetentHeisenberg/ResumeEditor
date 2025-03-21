@@ -84,6 +84,9 @@
 .welcome {
   height: 35%;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .dani {
@@ -95,8 +98,92 @@
 }
 
 .input {
-  font-size: 40px;
-  height: 10%;
+  margin-top: 3%;
+  font-size: 20px;
+  height: 50px;
   width: 70%;
-  color: aqua;
+  color: #ffffff;
+  background-color: #222;
+  border: 2px solid #8a8a8a;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+}
+
+.input:focus {
+  border-color: #272727;
+  box-shadow: 0 0 10px rgba(3, 3, 3, 0.6);
+}
+
+.welcomelabel {
+  font-size: 48px;
+  font-family: "Abril Fatface";
+  color: #222;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.labelunderwelcome {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  color: #2e2d2d;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.link {
+  margin-top: 5%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #a6a6a7, #555555);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.link:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  margin-top: 3%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #383838, #575656);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(59, 59, 59, 0.4);
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #1619bb, #150453);
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(68, 99, 139, 0.6);
+}
+
+.button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(106, 76, 243, 0.3);
 }
