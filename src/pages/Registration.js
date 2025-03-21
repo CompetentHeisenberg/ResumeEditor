@@ -28,6 +28,8 @@ function Registration() {
             <Input style={style.input} help={"Write Email"}></Input>
             <Input style={style.input} help={"Write Email"}></Input>
             <Input style={style.input} help={"Write Email"}></Input>
+            <Input style={style.input} help={"Write Email"}></Input>
+            <Input style={style.input} help={"Write Email"}></Input>
           </div>
         </div>
       </div>
