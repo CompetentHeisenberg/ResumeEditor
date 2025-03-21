@@ -26,6 +26,8 @@ function Registration() {
           <div className={style.welcome}></div>
           <div className={style.dani}>
             <Input style={style.input} help={"Write Email"}></Input>
+            <Input style={style.input} help={"Write Email"}></Input>
+            <Input style={style.input} help={"Write Email"}></Input>
           </div>
         </div>
       </div>
